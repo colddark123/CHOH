@@ -3,7 +3,7 @@ import torch as th
 import torch.nn as nn
 import argparse
 import numpy as np
-from trainer import Trainer
+from trainer2 import Trainer
 import datetime
 
 th.manual_seed(10)
@@ -14,7 +14,7 @@ parser.add_argument('--out_dim', type=int, default=1, help='output layer')
 parser.add_argument('--lr', type=float, default='1e-4')
 parser.add_argument('--epoch', type=int, default=1000)
 parser.add_argument('--batch_size', type=int, default='100')
-parser.add_argument('--device', type=str, default='cuda:0')
+parser.add_argument('--device', type=str, default='cuda:1')
 parser.add_argument('--plttitle', type=str, default='OH3-MPA')
 args = parser.parse_args()
 

@@ -12,7 +12,7 @@ parser.add_argument('--out_dim', type=int, default=1, help='output layer')
 parser.add_argument('--lr', type=float, default='1e-4')
 parser.add_argument('--epoch', type=int, default=100)
 parser.add_argument('--batch_size', type=int, default='100')
-parser.add_argument('--device', type=str, default='cuda:2')
+parser.add_argument('--device', type=str, default='cuda:1')
 parser.add_argument('--plttitle', type=str, default='CH5-MPA')
 args = parser.parse_args()
 
